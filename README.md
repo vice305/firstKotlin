@@ -1,4 +1,4 @@
-Markdown# Prompt-Powered Kickstart: Building a Beginner’s Toolkit for Kotlin + API Calls
+## Prompt-Powered Kickstart: Building a Beginner’s Toolkit for Kotlin + API Calls##
 
 ## 1. Title & Objective
 
@@ -48,7 +48,7 @@ Make the app interactive by adding this to build.gradle.kts (fixes input waiting
     standardInput = System.`in`
 }
 
-5. Minimal Working Example
+## 5. Minimal Working Example
 What it does:
 An interactive console program that:
 
@@ -74,7 +74,7 @@ Random Fact:
 
 Thanks for using the Fact Generator! Goodbye 👋
 Full code is in src/main/kotlin/org/example/App.kt (includes error handling and simple JSON parsing without libraries).
-6. AI Prompt Journal
+## 6. AI Prompt Journal
 
 Prompt 1: "how to start a kotlin project in vscode with gradle"
 → Guided interactive and non-interactive gradle init setup. Very helpful for beginners.
@@ -86,7 +86,7 @@ Prompt 4: "why readLine() doesn't wait in gradle run task kotlin"
 → Explained Gradle child process stdin issue; fixed with standardInput = System.in`` in build.gradle.kts.
 
 Evaluation: AI turned complex debugging into quick solutions — saved hours of searching docs/forums.
-7. Common Issues & Fixes
+## 7. Common Issues & Fixes
 
 A.gradle init no prompts/files → Use non-interactive flags or start in a fresh empty folder.
 B.Error: Could not find or load main class org.example.AppKt → Ensure mainClass = "org.example.AppKt" in build.gradle.kts and file is in correct package/folder.
@@ -96,7 +96,7 @@ E. JSON parsing fails (whitespace/escapes) → Use tolerant index search + unesc
 F.readLine() doesn't wait / infinite loop → Add standardInput = System.in`` to the run task in build.gradle.kts.
 G. Network/API errors → Check internet; verify API key; test endpoint in browser/curl.
 
-8. References
+## 8. References
 
 Official Kotlin docs: https://kotlinlang.org/docs/home.html
 Java HttpClient (used in code): https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.html
