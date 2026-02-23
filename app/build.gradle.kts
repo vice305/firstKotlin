@@ -45,3 +45,8 @@ application {
     // Define the main class for the application.
     mainClass = "org.example.AppKt"
 }
+// ... existing plugins, dependencies, application { mainClass = ... } ...
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}
